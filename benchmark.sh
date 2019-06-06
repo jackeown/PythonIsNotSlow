@@ -1,4 +1,4 @@
-work=500
+work=900
 
 echo "C code: "
 time ./benchmark $work
