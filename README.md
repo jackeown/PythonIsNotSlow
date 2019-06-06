@@ -11,7 +11,7 @@ The cython code is in `cythonHelpers.pyx` and is imported/run from `cythonBenchm
 
 
 ### Here are the results from running `./benchmark.sh` on my laptop:
-`
+```
 C code: 
 
 real	0m2.376s
@@ -36,4 +36,4 @@ real	0m0.062s
 user	0m0.055s
 sys	0m0.010s
 #####################################
-`
+```
