@@ -1,6 +1,6 @@
 
 build:
-	gcc -o benchmark benchmark.c
+	gcc -Os -o benchmark benchmark.c
 	python setup.py build_ext --inplace
 	cython -a cythonHelpers.pyx
 

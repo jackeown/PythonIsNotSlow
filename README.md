@@ -14,9 +14,9 @@ The cython code is in `cythonHelpers.pyx` and is imported/run from `cythonBenchm
 ```
 C code: 
 
-real	0m2.376s
-user	0m2.371s
-sys	0m0.004s
+real	0m0.012s
+user	0m0.012s
+sys	0m0.000s
 #####################################
 Naive python: 
 
