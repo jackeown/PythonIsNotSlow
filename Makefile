@@ -7,9 +7,9 @@ build:
 
 
 clean:
-	-rm benchmark
-	-rm benchmark_f90
+	-rm -f benchmark
+	-rm -f benchmark_f90
 
-	-rm cythonHelpers.c cythonHelpers.html
+	-rm -f cythonHelpers.c cythonHelpers.html
 	-rm *.so
 	-rm -rf build
