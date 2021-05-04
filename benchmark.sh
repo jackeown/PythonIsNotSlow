@@ -1,7 +1,7 @@
 work=900
 
 echo "C code: "
-time ./benchmark $work
+time ./benchmark_c $work
 echo "#####################################"
 
 
@@ -19,3 +19,6 @@ echo "Cython python: "
 time python cythonBenchmark.py $work
 echo "#####################################"
 
+echo "(Modern) Fortran  code: "
+time ./benchmark_f90 $work
+echo "#####################################"
