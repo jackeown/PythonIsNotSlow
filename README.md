@@ -11,36 +11,42 @@ The Cython code is in `cythonHelpers.pyx` and is imported/run from `cythonBenchm
 The Fortran code is in `benchmark.f90`
 
 
-### Here are the results from running `./benchmark.sh` on my laptop:
+### Here are the results from running `./benchmark.sh` on my [workstation](https://linux-hardware.org/?probe=28ce3a6f8d):
 ```
-C code: 
+C code:
 
-real    0m0.022s
-user    0m0.020s
-sys     0m0.002s
+real    0m0.024s
+user    0m0.019s
+sys     0m0.005s
 #####################################
-Naive Python: 
+Naive python:
 
-real    2m41.239s
-user    2m40.633s
-sys     0m0.086s
+real    2m16.430s
+user    2m15.398s
+sys     0m0.676s
 #####################################
-Numpy Python: 
+Numpy python:
 
-real    0m0.153s
-user    0m0.320s
-sys     0m0.050s
+real    0m0.793s
+user    0m0.213s
+sys     0m0.080s
 #####################################
-Cython Python: 
+Cython python:
 
-real    0m0.043s
-user    0m0.035s
-sys     0m0.007s
+real    0m0.036s
+user    0m0.028s
+sys     0m0.004s
 #####################################
-(Modern) Fortran  code: 
+(Modern) Fortran code (gfortran):
 
-real    0m0.057s
-user    0m0.054s
+real    0m0.066s
+user    0m0.043s
+sys     0m0.006s
+#####################################
+(Modern) Fortran code (Intel):
+
+real    0m0.114s
+user    0m0.110s
 sys     0m0.002s
 #####################################
 ```

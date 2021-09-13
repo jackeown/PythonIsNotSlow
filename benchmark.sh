@@ -19,6 +19,10 @@ echo "Cython python: "
 time python cythonBenchmark.py $work
 echo "#####################################"
 
-echo "(Modern) Fortran  code: "
-time ./benchmark_f90 $work
+echo "(Modern) Fortran code (gfortran): "
+time ./benchmark_f90_gfort $work
+echo "#####################################"
+
+echo "(Modern) Fortran code (Intel): "
+time ./benchmark_f90_ifort $work
 echo "#####################################"
